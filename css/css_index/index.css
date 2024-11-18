@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.carril {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-color: #c2c2c2bc;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+}
+.N1_2{
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Animación por defecto, oculto y fuera de la vista */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+.slide1 {
+    background-image: url('../img_css/fondo\ cetis\ 104.png');
+}
+.slide2 {
+    background-image: url('/sources/img/img_index/img2.jpg');
+}
+.slide3 {
+    background-image: url('/sources/img/img_index/img3.jpg');
+}
+
+/* Cuando el slide está activo y se muestra */
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Cuando el slide sale hacia la izquierda */
+.slide.left {
+    transform: translateX(-100%);
+}
+
+/* Cuando el slide entra desde la izquierda */
+.slide.enter-left {
+    transform: translateX(0);
+}
+
+/* Cuando el slide sale hacia la derecha */
+.slide.right {
+    transform: translateX(100%);
+}
+
+/* Cuando el slide entra desde la derecha */
+.slide.enter-right {
+    transform: translateX(0);
+}
+
+.overlay {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    color: #fd3a64;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Botones de navegación */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-buttons button {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Indicadores de posición */
+.indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9b9b9b;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+.dot.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-container-secciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px; /* Espacio mínimo entre tarjetas */
+    padding: 1px; /* Padding de 1px */
+}
+
+.tarjeta-seccion {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 40vh; /* Altura de 40% de la ventana */
+    border-radius: 4px;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa-color_vino {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 0, 0, 0.35); /* Capa color vino semitransparente */
+    z-index: 1; /* Capa color vino sobre la imagen */
+}
+
+.texto-superpuesto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(75, 0, 0, 0.5); /* Fondo color vino para el texto */
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 15px 0;
+    z-index: 2; /* El texto está encima de la capa color vino */
+}
+
+.pestana-color_vino {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #4B0000; /* Pestaña color vino que aparece por debajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.3s ease;
+}
+
+.tarjeta-seccion:hover .pestana-color_vino {
+    bottom: 0; /* Aparece la pestaña color vino al pasar el cursor */
+}
+
+.flecha-enlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.flecha-enlace .flecha::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white; /* Flechita blanca */
+}
+
+
+.frase_cetis h1{
+    padding-top: 5rem;
+    color: #6B0011;
+    font-size: 4em;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.frase_cetis p{
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    color: #6B0011;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* Ajustar a telefono */
+@media screen and (max-width: 1130px) {
+    .grid-container-secciones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        grid-template-areas: 
+            "seccion1 seccion2"
+            "seccion3 seccion3"; /* Dos primeras secciones juntas, tercera abajo */
+        gap: 1px;
+    }
+
+    .tarjeta-seccion:nth-child(1) {
+        grid-area: seccion1; /* Primera sección */
+    }
+
+    .tarjeta-seccion:nth-child(2) {
+        grid-area: seccion2; /* Segunda sección */
+    }
+
+    .tarjeta-seccion:nth-child(3) {
+        grid-area: seccion3; /* Tercera sección, ocupa toda la fila */
+    }
+
+    .tarjeta-seccion {
+        height: 25vh; /* Altura de 25% de la ventana */
+    }
+
+    .texto-superpuesto {
+        font-size: 1em;
+    }
+
+    .letra-slider {
+        font-size: xx-large;
+    }
+
+    .carril {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background-color: #eeeeee;
+        overflow: hidden;
+    }
+    
+}

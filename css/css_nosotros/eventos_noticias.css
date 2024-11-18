@@ -1,0 +1,60 @@
+body .navigations{
+    padding: 100px 10px;
+}
+.navigations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    padding: 30px;
+    text-align: center; 
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    transition: transform 0.3s ease;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.circle:hover {
+    transform: scale(1.1); 
+}
+
+.circle-item p {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333; 
+}
+
+@media (max-width: 768px) {
+    .navigations {
+        justify-content: center;
+    }
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+    .circle-item p {
+        font-size: 12px;
+        width: 70px;
+    }
+}
+

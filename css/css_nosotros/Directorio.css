@@ -1,0 +1,95 @@
+.alta-direccion {
+    padding-top: 3vh;
+    text-align: center;
+    margin: 20px;
+}
+
+.alta-direccion__titulo {
+    color: #6B0011;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.alta-direccion__contenedor {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alta-direccion__fila {
+    align-items: center;
+    background-color: #771021;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.alta-direccion__foto {
+    width: 70%; /* Reduce el tamaño de la imagen al 90% del ancho de la tarjeta */
+    height: auto;
+    border: 3px solid rgb(228, 228, 228); /* Borde blanco alrededor de la imagen */
+    margin: 10px auto; /* Añade un margen para separar la imagen del límite de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados en la imagen */
+}
+
+.alta-direccion__info {
+    padding: 15px;
+}
+
+.alta-direccion__texto {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.alta-direccion__texto strong {
+    font-weight: bold;
+    display: block;
+}
+
+/* Responsividad para pantallas grandes */
+@media (min-width: 1130px) {
+    .alta-direccion__contenedor {
+        flex-direction: column;
+    }
+
+    .alta-direccion__fila {
+        display: flex;
+        flex-direction: row;
+        background-color: white; /* Fondo blanco para pantallas grandes */
+        border: 2px solid #6b00122f; /* Borde rojo */
+        max-width: 100%;
+    }
+
+    .alta-direccion__foto {
+        width: 120px; /* Tamaño más pequeño para la imagen en pantallas grandes */
+        height: auto;
+        margin: 15px; /* Margen alrededor de la imagen */
+    }
+
+    .alta-direccion__info {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .alta-direccion__texto {
+        flex: 1;
+        margin: 5px 30px;
+        color: #333; /* Color de texto oscuro */
+    }
+
+    .alta-direccion__fila {
+        align-items: center;
+        max-width: none;
+    }
+}

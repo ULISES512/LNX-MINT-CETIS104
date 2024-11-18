@@ -1,0 +1,207 @@
+ .title{
+    position: relative;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    background-color:#6B0011;
+    border: 20px solid white;
+    border-radius: 50px;
+}
+
+.container-r1{
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+.container-r1 button{
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+    box-shadow: 15px 15px 15px rgb(195, 195, 195);
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right, #ff5d5d, #6B0011);
+}
+
+.container-r1 button img{
+ width: 70%;
+}
+.container-r1 button:hover{
+    transform: scale(1.2);
+}
+.container-r2{
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.579); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    transition: 0.3s;
+
+}
+
+.container-r2 img {
+    max-width: 80%; 
+    max-height: 80%;
+   
+}
+.container-r2 p{
+    color: white;
+    width: 20%;
+}
+
+.close-btn {
+    display: inline-block;
+    background-color: #f44336; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 15px; 
+}
+@keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+      border-radius: 90px;
+    }
+  }
+@media (max-width: 768px) {
+    .container-r1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container-r1 button{
+       margin: 15px 0px;
+       transition: all 0.3s;
+       view-timeline-name: --image;
+       view-timeline-axis: block;
+     
+       animation-timeline: --image;
+       animation-name: show;
+     
+       animation-range: entry 25% cover 30%;
+       animation-fill-mode: both;
+    }
+    .title{
+        font-size: 20px;
+        border: none;
+        border-radius: 0px;
+    }
+    .container-r2 {
+        display: none; 
+        flex-direction: column;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; 
+        transition: 0.3s;
+    
+    }
+    
+    .container-r2 img {
+        max-width: 80%; 
+        max-height: 80%;
+        padding: 15px;
+    
+    }
+    .container-r2 p{
+        padding: 30px 20px ;
+        color: white;
+        width: auto;
+        font-size: 20px;
+    }
+    .close-btn {
+        display: inline-block;
+        background-color: #f44336; 
+        color: white; 
+        padding: 10px 15px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        margin-top: 15px; 
+    }
+}
+@media (max-width: 1200px) {
+    .container-r1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container-r1 button{
+       margin: 15px 0px;
+       transition: all 0.3s;
+       view-timeline-name: --image;
+       view-timeline-axis: block;
+     
+       animation-timeline: --image;
+       animation-name: show;
+     
+       animation-range: entry 25% cover 30%;
+       animation-fill-mode: both;
+    }
+    .title{
+        font-size: 20px;
+        border: none;
+        border-radius: 0px;
+    }
+    .container-r2 {
+        display: none; 
+        flex-direction: column;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; 
+        transition: 0.3s;
+    
+    }
+    
+    .container-r2 img {
+        max-width: 80%; 
+        max-height: 80%;
+        padding: 15px;
+    
+    }
+    .container-r2 p{
+        padding: 30px 20px ;
+        color: white;
+        width: auto;
+        font-size: 20px;
+    }
+    .close-btn {
+        display: inline-block;
+        background-color: #f44336; 
+        color: white; 
+        padding: 10px 15px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        margin-top: 15px; 
+    }
+  }

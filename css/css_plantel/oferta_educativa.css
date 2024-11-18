@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/*NO SE QUE PEDO AY LUEGO VEMOS COMO VERGA LE HACEMOS*/
+.fondo-Principal {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.fondo-Principal img {
+  width: 100%;
+  height: 250%;
+}
+
+.fondo-Principal p {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  font-size: 30px;
+  max-width: 30%;
+  font-family: "Roboto Condensed", sans-serif;
+
+  animation: izi 1s ease-in-out;
+  margin: 0;
+}
+@keyframes izi {
+  0% {
+    left: -80%;
+  }
+  20% {
+    left: -80%;
+  }
+  40% {
+    left: -80%;
+  }
+  60% {
+    left: -80%;
+  }
+  80% {
+  }
+}
+
+.div-first {
+  margin-top: 40px;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+  background-image: url(../img_css/explanada.png);
+  justify-content: center;
+  padding: 0px 20px;
+  height: auto;
+  box-sizing: border-box;
+  border: 20px solid white;
+
+}
+
+
+
+.div-first p {
+  font-family: sans-serif;
+  color: white;
+
+  color: #ffffff;
+  font-size: 22px;
+
+  max-width: 70%;
+}
+
+.div-first img {
+  width: 150px;
+  height: auto;
+  margin-left: 10px;
+}
+
+
+body .Programacion-div,
+.Mecatronica-div,
+.Mecánica-Industrial-div,
+.Soporte-y-Mantenimiento-div,
+.Contabilidad-div,
+.Laboratorista-Químico-div,
+.Inteligencia-artificial-div {
+  padding-top: 150px;
+  transition: all 0.3s;
+
+}
+
+.Programacion-div,
+.Mecatronica-div,
+.Mecánica-Industrial-div,
+.Soporte-y-Mantenimiento-div,
+.Contabilidad-div,
+.Laboratorista-Químico-div,
+.Inteligencia-artificial-div {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 70px 130px;
+}
+
+.Programacion-div .body-div,
+.Mecatronica-div .body-div2,
+.Mecánica-Industrial-div .body-div3,
+.Soporte-y-Mantenimiento-div .body-div4,
+.Contabilidad-div .body-div5,
+.Laboratorista-Químico-div .body-div6,
+.Inteligencia-artificial-div .body-div7 {
+  width: 100px;
+  height: 250px;
+  border: 2px solid #6b0011;
+  padding: 10px 13px;
+}
+
+.body-div .centro-div,
+.body-div2 .centro-div2,
+.body-div3 .centro-div3,
+.body-div4 .centro-div4,
+.body-div5 .centro-div5,
+.body-div6 .centro-div6,
+.body-div7 .centro-div7 {
+  z-index: 10;
+  width: 70px;
+  height: 220px;
+  background-color: #6b0011;
+}
+
+.Progaming-p,
+.Mecatronica-p,
+.Mecánica-Industrial-p,
+.Soporte-y-Mantenimiento-p,
+.Contabilidad-p,
+.Laboratorista-Químico-p,
+.Inteligencia-artificial-p {
+  position: relative;
+  padding: 100px 20px;
+}
+
+.Progaming-p a,
+.Mecatronica-p a,
+.Mecánica-Industrial-p a,
+.Soporte-y-Mantenimiento-p a,
+.Contabilidad-p a,
+.Laboratorista-Químico-p a,
+.Inteligencia-artificial-p a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  width: 20%;
+}
+
+.Progaming-p a:hover,
+.Mecatronica-p a:hover,
+.Mecánica-Industrial-p a:hover,
+.Soporte-y-Mantenimiento-p a:hover,
+.Contabilidad-p a:hover,
+.Laboratorista-Químico-p a:hover,
+.Inteligencia-artificial-p a:hover {
+  border-bottom: 1px solid black;
+}
+
+.more-info1,
+.more-info2,
+.more-info3,
+.more-info4,
+.more-info5,
+.more-info6,
+.more-info7 {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-info1 img,
+.more-info2 img,
+.more-info3 img,
+.more-info4 img,
+.more-info5 img,
+.more-info6 img,
+.more-info7 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.more-info1 span,
+.more-info2 span,
+.more-info3 span,
+.more-info4 span,
+.more-info5 span,
+.more-info6 span,
+.more-info7 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(158, 0, 0, 0.392);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.more-info1:hover span,
+.more-info2:hover span,
+.more-info3:hover span,
+.more-info4:hover span,
+.more-info5:hover span,
+.more-info6:hover span,
+.more-info7:hover span {
+  width: 100%;
+  height: 100%;
+}
+
+.more-info1:hover img,
+.more-info2:hover img,
+.more-info3:hover img,
+.more-info4:hover img,
+.more-info5:hover img,
+.more-info6:hover img,
+.more-info7:hover img {
+  transform: scale(1.2);
+}
+
+.Horarios-Programacion,
+.Horarios-Mecatronica,
+.Horarios-Mecánica-Industrial,
+.Horarios-Soporte-y-Mantenimiento,
+.Horarios-Contabilidad,
+.Horarios-Laboratorista-Químico,
+.Horarios-Inteligencia-artificial {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Horarios-Programacion img,
+.Horarios-Mecatronica img,
+.Horarios-Mecánica-Industrial img,
+.Horarios-Soporte-y-Mantenimiento img,
+.Horarios-Contabilidad img,
+.Horarios-Laboratorista-Químico img,
+.Horarios-Inteligencia-artificial img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Horarios-Programacion span,
+.Horarios-Mecatronica span,
+.Horarios-Mecánica-Industrial span,
+.Horarios-Soporte-y-Mantenimiento span,
+.Horarios-Contabilidad span,
+.Horarios-Laboratorista-Químico span,
+.Horarios-Inteligencia-artificial span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  background-color: rgba(158, 0, 0, 0.392);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.Horarios-Programacion:hover span,
+.Horarios-Mecatronica:hover span,
+.Horarios-Mecánica-Industrial:hover span,
+.Horarios-Soporte-y-Mantenimiento:hover span,
+.Horarios-Contabilidad:hover span,
+.Horarios-Laboratorista-Químico:hover span,
+.Horarios-Inteligencia-artificial:hover span {
+  width: 100%;
+  height: 100%;
+}
+
+.Horarios-Programacion:hover img,
+.Horarios-Mecatronica:hover img,
+.Horarios-Mecánica-Industrial:hover img,
+.Horarios-Soporte-y-Mantenimiento:hover img,
+.Horarios-Contabilidad:hover img,
+.Horarios-Laboratorista-Químico:hover img,
+.Horarios-Inteligencia-artificial:hover img {
+  transform: scale(1.2);
+}
+
+.elements-1,
+.elements-2,
+.elements-3,
+.elements-4,
+.elements-5,
+.elements-6,
+.elements-7 {
+  position: relative;
+  padding: 0px 200px;
+  justify-content: start;
+  display: flex;
+  gap: 80px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  transition: all 0.3s;
+ 
+}
+
+.container {
+  width: 25vh;
+  height: 25vh;
+  position: fixed;
+  bottom: -7.5px;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  animation: float 3s ease-in-out infinite;
+  transition: opacity 0.2s ease-out;
+}
+
+.container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .container {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .dino {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+@media (max-width: 1200px) {
+  .img2-div-first {
+    display: none;
+  }
+
+  .fondo-Principal p {
+    top: 50%;
+    right: 5%;
+    font-size: 28px;
+    max-width: 80%;
+    text-align: center;
+  }
+}
+/*****************************************************************************************************************/
+@media (max-width: 768px) {
+  .img2-div-first {
+    display: none;
+  }
+
+  .Programacion-div,
+  .Mecatronica-div,
+  .Mecánica-Industrial-div,
+  .Soporte-y-Mantenimiento-div,
+  .Contabilidad-div,
+  .Laboratorista-Químico-div,
+  .Inteligencia-artificial-div {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+  }
+  .Programacion-div .body-div,
+  .Mecatronica-div .body-div2,
+  .Mecánica-Industrial-div .body-div3,
+  .Soporte-y-Mantenimiento-div .body-div4,
+  .Contabilidad-div .body-div5,
+  .Laboratorista-Químico-div .body-div6,
+  .Inteligencia-artificial-div .body-div7 {
+    width: 60px;
+    height: 150px;
+    border: 2px solid #6b0011;
+    padding: 10px 13px;
+  }
+  .body-div .centro-div,
+  .body-div2 .centro-div2,
+  .body-div3 .centro-div3,
+  .body-div4 .centro-div4,
+  .body-div5 .centro-div5,
+  .body-div6 .centro-div6,
+  .body-div7 .centro-div7 {
+    z-index: 10;
+    width: 20px;
+    height: 120px;
+    background-color: #6b0011;
+  }
+  .Progaming-p,
+  .Mecatronica-p,
+  .Mecánica-Industrial-p,
+  .Soporte-y-Mantenimiento-p,
+  .Contabilidad-p,
+  .Laboratorista-Químico-p,
+  .Inteligencia-artificial-p {
+    position: relative;
+    padding: 50px 20px;
+  }
+  .Progaming-p a,
+  .Mecatronica-p a,
+  .Mecánica-Industrial-p a,
+  .Soporte-y-Mantenimiento-p a,
+  .Contabilidad-p a,
+  .Laboratorista-Químico-p a,
+  .Inteligencia-artificial-p a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .elements-1 span p,
+  .elements-2 span p,
+  .elements-3 span p,
+  .elements-4 span p,
+  .elements-5 span p,
+  .elements-6 span p,
+  .elements-7 span .elemt7-txt .div-first {
+    font-size: 15px;
+  }
+
+  .div-first p {
+    max-width: 90%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .div-first img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .div-first p {
+    font-size: 15px;
+  }
+  body .fondo-Principal {
+    margin-top: 80px;
+    overflow: hidden;
+  }
+  .fondo-Principal img {
+    width: 180%;
+  }
+  .fondo-Principal p {
+    font-size: 18px;
+    max-width: 70%;
+    left: 40%;
+    top: 40%;
+  }
+  .div-first {
+    margin-top: 100px;
+  }
+
+  .elements-1,
+  .elements-2,
+  .elements-3,
+  .elements-4,
+  .elements-5,
+  .elements-6,
+  .elements-7 {
+    padding: 0px 50px;
+  }
+
+  .more-info1,
+  .Horarios-Programacion,
+  .more-info2,
+  .Horarios-Mecatronica,
+  .more-info3,
+  .Horarios-Mecánica-Industrial,
+  .more-info4,
+  .Horarios-Soporte-y-Mantenimiento,
+  .more-info5,
+  .Horarios-Contabilidad,
+  .more-info6,
+  .Horarios-Laboratorista-Químico,
+  .more-info7,
+  .Horarios-Inteligencia-artificial {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .bording1-1,
+  .bording2-1 {
+    width: 60%;
+    height: 60%;
+  }
+
+  .bording1-1 p,
+  .bording2-1 p {
+    font-size: 12px;
+  }
+}

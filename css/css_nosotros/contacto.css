@@ -1,0 +1,52 @@
+.Contact-info{
+    position: relative;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Contact-info p{
+    padding: 10px 10px;
+}
+.Contact-info a{
+    text-decoration: none;
+}
+body{
+    background-color: #f8f9fa; 
+}
+.Contact-info {
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.Contact-info h2 {
+    text-align: center; 
+    color: #343a40; 
+    margin-bottom: 15px; 
+}
+
+.Contact-info p {
+    font-size: 16px; 
+    color: #495057; 
+    margin: 10px 0; 
+}
+
+.Contact-info a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.Contact-info a:hover {
+    text-decoration: underline; 
+}
+
+.note {
+    font-style: italic; 
+    color: #6c757d; 
+    margin-top: 20px;
+    text-align: center;
+}
+.footer{
+    margin-top: 180px;
+}

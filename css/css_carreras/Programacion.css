@@ -1,0 +1,98 @@
+.title-2{
+    position: relative;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    background-color:#6B0011;
+    border: 20px solid white;
+    border-radius: 50px;
+}
+
+.bank-img{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.bank-img img{
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(150, 150, 150);
+}
+
+.info-carrera {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.info-carrera h2 {
+    font-size: 1.8rem;
+    color: #5a0000;
+    margin-top: 20px;
+}
+
+.info-carrera  p {
+    font-size: 1rem;
+    color: #151515;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.info-carrera ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.info-carrera  ul li {
+    margin-bottom: 8px;
+}
+
+
+.validez-oficial {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ae0000;
+}
+.gobierno{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gobierno .img-cetis{
+    width: 300px;
+    height:150px;
+}
+
+@media (max-width:768px){
+    .info-carrera {
+        margin: 10px;
+    }
+
+    .info-carrera h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-carrera p, ul li {
+        font-size: 0.9rem;
+    }
+.bank-img{
+   flex-direction: column;
+    align-items: center;
+}
+.bank-img img{
+    width: 250px;
+    height: 200px;
+}
+.title-2{
+    font-size: 25px;
+}
+}

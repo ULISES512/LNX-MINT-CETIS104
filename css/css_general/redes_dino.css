@@ -1,0 +1,40 @@
+.container {
+    width: 25vh;
+    height: 25vh;
+    position: fixed;
+    bottom: -7.5px;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    animation: float 3s ease-in-out infinite;
+    transition: opacity .2s ease-out;
+}
+
+.container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7.5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .container {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .dino {
+        width: 15vh;
+        height: 15vh;
+    }
+}

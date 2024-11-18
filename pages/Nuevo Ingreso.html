@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../sources/img/img_general/logo_con_fondo.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/css_nosotros/nuevoIngreso.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Nuevo Ingreso | Cetis 104</title>
+  </head>
+  <body>
+    <!-- header agregado con js NT.Para modificar el header solo modificar el archivo "plantilla/header.html" -->
+    <div id="header"></div>
+
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+      <!-- todo el contenido -->
+      <div class="cont-video">
+        <img src="https://scontent.fpbc6-1.fna.fbcdn.net/v/t1.6435-9/69259432_870163663367264_310183732118028288_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEoZL6eBP39NHoge1rlJIW4SGdxdBlPhqlIZ3F0GU-GqSjKJ1CgBVLwDuX00kcHSdoAZGXHb_-871mGdvQlkbCF&_nc_ohc=nPjvbMrbGkAQ7kNvgHYfpf0&_nc_zt=23&_nc_ht=scontent.fpbc6-1.fna&_nc_gid=AAHTVRLmIvfY0qf9K2sThYI&oh=00_AYBxbPqrMkMmDZOLVWGkyK_6w2R9a3xW5HCoLWtztDsbQA&oe=6760FFDC" alt="" />
+        <p id="eslo1">Formamos tu presente, construimos tu futuro.</p>
+        <p id="eslo2">
+          Descubre todo lo que el mejor CETis tiene para ofrecerte.
+          <br />
+          Invierte en tu futuro y transforma tu vida. 🙂
+        </p>
+        <script>
+          const textoElemento = document.getElementById("eslo2");
+          const textoCompleto = textoElemento.textContent;
+          textoElemento.textContent = "";
+
+          [...textoCompleto].forEach((letra, index) => {
+            setTimeout(() => {
+              textoElemento.textContent += letra;
+            }, index * 50);
+          });
+        </script>
+      </div>
+
+      <div class="container2">
+        <div>
+          <img
+            src="https://image.freepik.com/foto-gratis/mano-personas-escribiendo-cuaderno_28629-55.jpg"
+            alt=""
+            id="student"
+          />
+        </div>
+
+        <div class="ct2-txt">
+          <p>¿NO SABES QUE ESTUDIAR?</p>
+          <p class="p2">
+            ¿No estás seguro de qué carrera elegir? No te preocupes, estamos
+            aquí para orientarte. Haz clic en el botón y descubre una guía
+            resumida con las características de cada especialidad, diseñada para
+            ayudarte a encontrar la opción que mejor se adapte a tus intereses y
+            metas.
+          </p>
+          <a href="../pages/mejorOpcion.html">Mejor opcion</a>
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="Why">
+          <div>
+            <img
+              src="../sources/img/img-edx/3700477-certificate-certified-contract-diploma-guarantee-patent-qualification_108739.png"
+              alt=""
+            />
+            <p>
+              Completa tu bachillerato mientras obtienes un título técnico que
+              respaldará tu futuro profesional.
+            </p>
+          </div>
+          <div>
+            <img
+              src="../sources/img/img-edx/future_farming_technology_agriculture_science_icon_156034.png"
+              alt=""
+            />
+            <p>
+              Te preparamos para el futuro con una carrera técnica que abrirá
+              las puertas a nuevas oportunidades.
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://cdn.icon-icons.com/icons2/466/PNG/512/Teacher-male512_44209.png"
+              alt=""
+            />
+            <p>
+              Contamos con docentes altamente capacitados para brindarte la
+              mejor educación y formación profesional
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container4">
+        <div class="tt-ct4">
+            <span class="separator"></span>
+            <p>REQUISITOS DE INGRESO Y PROCESOS DE ADMISIÓN</p>
+        </div>
+
+        <div class="request-new-ingress">
+            <ul>
+                <li>Acta de nacimiento</li>
+                <li>CURP (nuevo formato)</li>
+                <li>Certificado de secundaria o constancia de estudios con calificaciones al bimestre que cursen y promedio de primero a segundo año de secundaria</li>
+                <li>Comprobante de domicilio</li>
+                <li>INE del padre de familia o tutor</li>
+                <li>Fotografía tamaño infantil autoadherible blanco y negro o color reciente</li>
+                <li>Teléfono de casa</li>
+                <li>Celular</li>
+                <li>Correo electrónico</li>
+                <li>Tres opciones de especialidad a solicitar</li>
+            </ul>
+        </div>
+        <div class="tt2-ct4">
+            <span class="separator2"></span>
+            <p>DATOS BANCARIOS - CETIS 104</p>
+        </div>
+
+        <div class="dates-bankaris">
+            <div class="info-pagos">
+                <p><strong>BANCO RECEPTOR DE PAGOS: <br></strong> Banco Santander</p>
+                <p><strong> Cliente:</strong> <br> CETIS 104 COMITÉ DE PADRES DE FAMILIA A.C.</p>
+                <p><strong>No. de Cuenta: <br></strong> 65-50872913-6</p>
+                <p><strong>Clabe Interbancaria:</strong> <br> 014650655087291364</p>
+                <p><strong>Cuota de Expedición de Ficha de Admisión:</strong> <br>$500 MXN</p>
+            </div>
+        </div>
+
+        <div class="tt3-ct4">
+            <span class="separator3"></span>
+            <p>SOLICITUD DE REGISTRO PARA FICHA DE ADMISIÓN</p>
+        </div>
+
+        <div class="horaries-admin">
+            <p><strong>Solicita tu Ficha de Admisión:</strong></p>
+            <p >Desde el 19 de febrero del año en curso</p>
+            <p >Hasta el 27 de junio del año en curso</p>
+        
+            <p ><strong>Horarios de Atención:</strong></p>
+            <p >Lunes a viernes de 9:00 a. m. a 6:00 p. m.</p>
+        
+            <p ><strong>Departamentos de Atención:</strong></p>
+            <p >Control escolar</p>
+        </div>
+
+        <div class="tt4-ct4">
+            <span class="separator4"></span>
+            <p>EXAMEN DE ADMISIÓN</p>
+        </div>
+        
+        <div class="examen-admin">
+            <p><strong>Fecha del Examen</strong></p>
+            <p>29 de junio del año en curso</p>
+            <p><strong>Hora</strong></p>
+            <p>8:00 AM (Preferible llegar 15 minutos antes)</p>
+            
+            <p><strong>Requisitos</strong></p>
+            <p>Ficha de admisión</p>
+            <p>Copia de tu CURP</p>
+        </div>
+        
+        
+        
+    </div>
+    
+    </div>
+
+    <div id="footer" class="footer" onfocus="closeSidebar()"></div>
+
+    <div id="dino_cetis" class="dino_cetis" onfocus="closeSidebar()"></div>
+
+    <script src="../js/js_general/agg-plantillas.js"></script>
+  </body>
+</html>

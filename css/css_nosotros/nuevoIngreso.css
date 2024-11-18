@@ -1,0 +1,783 @@
+
+.cont1{
+    position: relative;
+    margin-top: 0px;
+    padding: 40px 20px;
+    background-color: rgb(245, 245, 245);
+}
+:root{
+    --blanco-color:rgb(245, 245, 245);
+}
+.cont1 .tt1-c1{
+    text-align: center;
+    color: rgb(12, 0, 105);
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cont-video{
+    position: relative;
+    width: 100%;
+}
+.cont-video img{
+    width: 100%;
+    filter: contrast(150%);
+    filter: saturate(200%);
+    filter: brightness(0.5);
+    
+    
+
+}
+.cont-video  #eslo1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: eslo1 0.9s ease-in-out;
+}
+.cont-video #eslo2{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size:50px;
+    font-family: sans-serif;
+}
+@keyframes eslo1{
+    0%{
+        left: -90%;
+    }
+    20%{
+        left: -90%;
+    }
+    40%{
+        left: -90%;
+    }
+    60%{
+        left: -90%;
+    }
+    80%{
+        left: -90%;
+    }
+
+}
+.container2{
+    position: relative;
+    margin-top: 0px;
+    background-image: url(https://media.istockphoto.com/photos/long-panoramic-backgrounds-in-horizontal-positionlight-pastel-marble-picture-id1148208026?k=20&m=1148208026&s=170667a&w=0&h=oe9uRzZGNSdx4IttmZoVWoMPBvCNc4UXIniIT3bt-yk=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+.container2 div{
+    padding: 0px 50px;
+}
+
+.container2 img{
+    width: 650px;
+    height: 500px;
+    padding: 20px 20px;
+    border-top-right-radius: 100px;
+}
+.ct2-txt{
+    margin-top: 50px;
+    color: rgb(109, 0, 0);
+    font-size: 80px;
+    font-family: "Kanit", sans-serif;
+}
+.ct2-txt .p2{
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+    font-family:  sans-serif;
+}
+.ct2-txt a{
+    background-color: rgb(165, 0, 0);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+   padding: 10px 20px;
+   transition:0.3s;
+}
+.ct2-txt a:hover{
+    background-color: rgb(255, 114, 114)
+}
+.container3{
+    position: relative;
+}
+.Why {
+    position: relative;
+    display: flex;
+    background-image: url(https://img.freepik.com/premium-photo/dust-scratched-textured-backgroundsgrunge-white-black-wall-backgroundabstract-background_196290-7923.jpg);
+    justify-content: space-around;
+    padding: 20px 20px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas */
+}
+
+.Why div {
+    padding: 20px 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(111, 0, 0);
+    display: flex;
+    justify-content: center; /* Alineación centrada para el contenido */
+    flex-direction: column; /* Asegura que la imagen y el texto se apilen verticalmente */
+    align-items: center; /* Centra los elementos dentro de cada div */
+    margin: 10px; /* Espacio entre cada div */
+    width: 30%; /* Controla el tamaño de los divs en pantallas más grandes */
+    min-width: 250px; /* Tamaño mínimo para que no se hagan demasiado pequeños en pantallas pequeñas */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+.Why div img {
+    width: 150px; /* Ajuste del tamaño de las imágenes para que no se desborden */
+    height: 150px;
+    
+    padding: 0px 20px;
+}
+
+.Why div p {
+    color: white;
+    max-width: 350px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+.container4{
+    position: relative;
+    background:linear-gradient(rgb(241, 241, 241),white);
+}
+.container4 .tt-ct4{
+    position: relative;
+    justify-content:baseline;
+    display: flex;
+}
+.tt-ct4 .separator{
+    margin-top: 40px;
+    width: 30px;
+    margin-left: 20px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(117, 0, 0);
+}
+.tt-ct4 p{
+    padding: 40px;
+    color: rgb(0, 3, 57);
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.request-new-ingress{
+    margin-left: 25px;
+    position: relative;
+    max-width: 800px;
+    background: #2f2f2f;
+    border-radius: 30px;
+}
+.request-new-ingress ul{
+    color: #3e3e3e;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+.request-new-ingress li{
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+}
+.container4 .tt2-ct4{
+    position: relative;
+    justify-content:baseline;
+    display: flex;
+}
+.tt2-ct4 .separator2{
+    margin-top: 40px;
+    width: 30px;
+    margin-left: 20px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(117, 0, 0);
+}
+.tt2-ct4 p{
+    padding: 40px;
+    color: rgb(0, 3, 57);
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.dates-bankaris{
+    margin-left: 25px;
+    position: relative;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px rgb(226, 226, 226);
+}
+.info-pagos {
+   position: relative;
+}
+
+.info-pagos p {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.info-pagos strong {
+    color: #a70000; /* Resaltar los títulos */
+}
+
+
+.container4 .tt3-ct4{
+    position: relative;
+    justify-content:baseline;
+    display: flex;
+}
+.tt3-ct4 .separator3{
+    margin-top: 40px;
+    width: 30px;
+    margin-left: 20px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(117, 0, 0);
+}
+.tt3-ct4 p{
+    padding: 40px;
+    color: rgb(0, 3, 57);
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.horaries-admin{
+    margin-left: 25px;
+    position: relative;
+    max-width: 800px;
+    background: linear-gradient(rgb(120, 9, 9),rgb(167, 0, 0));
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px rgb(205, 205, 205);
+}
+.horaries-admin p{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(193, 193, 193);
+}
+.horaries-admin strong {
+    color: #ffffff; /* Resaltar los títulos */
+}
+
+.container4 .tt4-ct4{
+    position: relative;
+    justify-content:baseline;
+    display: flex;
+}
+.tt4-ct4 .separator4{
+    margin-top: 40px;
+    width: 30px;
+    margin-left: 20px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(117, 0, 0);
+}
+.tt4-ct4 p{
+    padding: 40px;
+    color: rgb(0, 3, 57);
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.examen-admin{
+    margin-left: 25px;
+    position: relative;
+    max-width: 800px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px rgb(231, 231, 231);
+    background-color: gray;
+}
+.examen-admin p{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(229, 229, 229);
+}
+.examen-admin strong {
+    color: #be0000; /* Resaltar los títulos */
+}
+
+
+/******************************************************************************************************************************************************/
+/******************************************************************************************************************************************************/
+/******************************************************************************************************************************************************/
+
+@media (max-width: 768px) {
+    .horaries-admin p{
+        font-size: 15px;
+    }
+    .examen-admin p{
+        font-size: 15px;
+    }
+    .examen-admin{
+        max-width: 350px;
+    }
+    .horaries-admin {
+        max-width: 350px;
+    }
+    .request-new-ingress{
+        max-width: 350px;
+    }
+    .request-new-ingress li{
+        font-size: 15px;
+    }
+    .tt-ct4 p{
+        font-size: 20px;
+    }
+    .tt4-ct4 p{
+        font-size: 20px;
+    }
+    .tt2-ct4 p{
+        font-size: 20px;
+    }
+    .tt3-ct4 p{
+        font-size: 20px;
+    }
+    .dates-bankaris{
+        max-width: 350px;
+    }
+    .dates-bankaris p{
+        font-size: 15px;
+    }
+    .Why {
+        position: relative;
+        display: flex;
+        background-color: #bdbdbd;
+        justify-content: space-around;
+        padding: 20px 20px;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas en pantallas pequeñas */
+    }
+    
+    .Why div {
+        padding: 20px 20px;
+        border-radius: 20px;
+        position: relative;
+        background-color: rgb(111, 0, 0);
+        display: flex;
+        justify-content: center; /* Centra los elementos dentro de cada div */
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
+        margin: 10px;
+        max-width: 350px; /* Limita el ancho de cada div */
+        width: 100%; /* Hace que el div ocupe el 100% del ancho disponible */
+        box-sizing: border-box;
+    }
+    
+    .Why div img {
+        width: 200px; /* Reducción del tamaño de la imagen en pantallas pequeñas */
+        height: 200px;
+        padding: 0px 20px;
+        margin-right: 100px;
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+    
+    .Why div p {
+        color: white;
+        max-width: 350px;
+        font-size: 20px; /* Ajuste en el tamaño de la fuente para pantallas pequeñas */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+    .Why {
+        flex-direction: column; /* Coloca los divs en una columna cuando el tamaño de pantalla es pequeño */
+        align-items: center; /* Centra los divs */
+    }
+
+    .Why div {
+        width: 90%; /* Ajusta los divs para ocupar un 90% del ancho */
+        max-width: none; /* Elimina el máximo ancho */
+    }
+
+    .Why div p {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+
+    .Why div img {
+        width: 120px; /* Ajuste de tamaño de imagen */
+        height: 120px;
+    }
+    .container2 {
+        position: relative;
+        margin-top: 0px;
+        background-image: url(https://media.istockphoto.com/photos/long-panoramic-backgrounds-in-horizontal-positionlight-pastel-marble-picture-id1148208026?k=20&m=1148208026&s=170667a&w=0&h=oe9uRzZGNSdx4IttmZoVWoMPBvCNc4UXIniIT3bt-yk=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        padding: 20px;
+    }
+    
+    .container2 div {
+        padding: 0px 20px;
+        text-align: center; /* Alinea el texto en pantallas pequeñas */
+    }
+    
+    .container2 img {
+        width: 100%; /* Imagen ocupa el ancho completo en pantallas pequeñas */
+        max-width: 650px; /* Limita el tamaño máximo en pantallas grandes */
+        height: auto; /* Mantiene proporción al reducir el ancho */
+        padding: 20px 0;
+        border-top-right-radius: 50px; /* Ajustamos para que se vea bien en tamaños pequeños */
+    }
+    
+    .ct2-txt {
+        margin-top: 20px;
+        color: rgb(15, 15, 15);
+        font-size: 2rem; /* Tamaño dinámico del texto */
+        font-family: "Kanit", sans-serif;
+    }
+    
+    .ct2-txt .p2 {
+        font-size: 1rem;
+        margin-top: 20px;
+        color: black;
+        font-family: sans-serif;
+    }
+    
+    .ct2-txt a {
+        background-color: rgb(165, 0, 0);
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 10px 20px;
+        transition: 0.3s;
+        display: inline-block; /* Se asegura de que el botón no ocupe el ancho completo */
+    }
+    
+    .ct2-txt a:hover {
+        background-color: rgb(255, 114, 114);
+    }
+    .container2 {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .ct2-txt {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .ct2-txt .p2 {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto adicional */
+    }
+
+    .container2 img {
+        max-width: 90%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+        border-top-right-radius: 30px; /* Reduce el radio del borde */
+    }
+
+
+    .cont-video{
+        position: relative;
+        width: 100%;
+    }
+    .cont-video  #eslo1{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation: eslo1 0.9s ease-in-out;
+    
+    }
+    .cont-video #eslo2{
+        color: #ffffff;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        font-size:15px;
+        font-family: sans-serif;
+    }
+    @keyframes eslo1{
+        0%{
+            left: -150%;
+        }
+        20%{
+            left: -150%;
+        }
+        40%{
+            left: -150%;
+        }
+        60%{
+            left: -150%;
+        }
+        80%{
+            left: -150%;
+        }
+    
+    }
+
+
+    .nuevo-ingreso-container {
+        padding: 15px;
+    }
+
+    .nuevo-ingreso-container h2, .nuevo-ingreso-container h3 {
+        font-size: 20px;
+    }
+
+    .nuevo-ingreso-container .beneficios li {
+        font-size: 14px;
+    }
+    .dino-fork p{
+        color: rgb(162, 0, 0);
+        text-align: center;
+        font-size: 25px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .cont1 .tt1-c1{
+        text-align: center;
+        color: rgb(12, 0, 105);
+        font-size: 25px;
+      
+        }
+    .cont2 {
+        flex-direction: column; 
+        align-items: center;
+        padding: 15px;
+    }
+
+    .cont2 div {
+        width: 90%; 
+        height: auto; 
+        padding: 20px;
+    }
+
+    .cont2 .cont1-c2 img,
+    .cont2 .cont2-c2 img,
+    .cont2 .cont3-c2 img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cont2 .cont1-c2 p,
+    .cont2 .cont2-c2 p,
+    .cont2 .cont3-c2 p {
+        font-size: 18px;
+    }
+}
+
+/******************************************************************************************************************************************************/
+
+@media (max-width: 480px) {
+    .tt2-ct4 p{
+        font-size: 20px;
+    }
+    .dates-bankaris{
+        max-width: 350px;
+    }
+    .dates-bankaris li{
+        font-size: 15px;
+    }
+    .request-new-ingress{
+        max-width: 350px;
+    }
+    .request-new-ingress li{
+        font-size: 15px;
+    }
+    .tt-ct4 p{
+        font-size: 20px;
+    }
+    .Why {
+        position: relative;
+        display: flex;
+        background-color: #bdbdbd;
+        justify-content: space-around;
+        padding: 20px 20px;
+        flex-wrap: wrap; 
+    }
+    
+    .Why div {
+        padding: 20px 20px;
+        border-radius: 20px;
+        position: relative;
+        background-color: rgb(111, 0, 0);
+        display: flex;
+        justify-content: center; /* Centra los elementos dentro de cada div */
+        flex-direction: column; /* Coloca la imagen y el texto en columna */
+        margin: 10px;
+        max-width: 350px; /* Limita el ancho de cada div */
+        width: 100%; /* Hace que el div ocupe el 100% del ancho disponible */
+        box-sizing: border-box;
+    }
+    
+    .Why div img {
+        width: 200px; /* Reducción del tamaño de la imagen en pantallas pequeñas */
+        height: 150px;
+        margin-left: 100px;
+        padding: 0px 20px;
+        margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+    
+    .Why div p {
+        color: white;
+        max-width: 350px;
+        font-size: 20px; /* Ajuste en el tamaño de la fuente para pantallas pequeñas */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding: 10px;
+    }
+    .Why div p {
+        font-size: 16px; /* Ajuste del tamaño del texto para pantallas más pequeñas */
+    }
+
+    .Why div img {
+        width: 100px; /* Imagen más pequeña en pantallas muy pequeñas */
+        height: 100px;
+    }
+
+    .cont-video{
+        position: relative;
+        width: 100%;
+    }
+    .cont2 {
+        padding: 10px;
+    }
+
+    .cont2 div {
+        width: 100%; 
+        padding: 15px;
+        margin-bottom: 15px; 
+    }
+
+    .cont2 .cont1-c2 img,
+    .cont2 .cont2-c2 img,
+    .cont2 .cont3-c2 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cont2 .cont1-c2 p,
+    .cont2 .cont2-c2 p,
+    .cont2 .cont3-c2 p {
+        font-size: 16px;
+    }
+
+
+    .cont-video  #eslo1{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation: eslo1 0.9s ease-in-out;
+    
+    }
+    .cont-video #eslo2{
+        color: #ffffff;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        font-size:15px;
+        font-family: sans-serif;
+    }
+    .container2{
+        margin-top: 10px;
+    }
+    @keyframes eslo1{
+        0%{
+            left: -150%;
+        }
+        20%{
+            left: -150%;
+        }
+        40%{
+            left: -150%;
+        }
+        60%{
+            left: -150%;
+        }
+        80%{
+            left: -150%;
+        }
+    
+    }
+
+    .container2 {
+        position: relative;
+        margin-top: 0px;
+        background-image: url(https://media.istockphoto.com/photos/long-panoramic-backgrounds-in-horizontal-positionlight-pastel-marble-picture-id1148208026?k=20&m=1148208026&s=170667a&w=0&h=oe9uRzZGNSdx4IttmZoVWoMPBvCNc4UXIniIT3bt-yk=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+        padding: 20px;
+    }
+    
+    .container2 div {
+        padding: 0px 20px;
+        text-align: center; /* Alinea el texto en pantallas pequeñas */
+    }
+    
+    .container2 img {
+        width: 100%; /* Imagen ocupa el ancho completo en pantallas pequeñas */
+        max-width: 650px; /* Limita el tamaño máximo en pantallas grandes */
+        height: auto; /* Mantiene proporción al reducir el ancho */
+        padding: 20px 0;
+        border-top-right-radius: 50px; /* Ajustamos para que se vea bien en tamaños pequeños */
+    }
+    
+    .ct2-txt {
+        margin-top: 20px;
+        color: rgb(109, 0, 0);
+        font-size: 2rem; /* Tamaño dinámico del texto */
+        font-family: "Kanit", sans-serif;
+    }
+    
+    .ct2-txt .p2 {
+        font-size: 1rem;
+        margin-top: 20px;
+        color: black;
+        font-family: sans-serif;
+    }
+    
+    .ct2-txt a {
+        background-color: rgb(165, 0, 0);
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 10px 20px;
+        transition: 0.3s;
+        display: inline-block; /* Se asegura de que el botón no ocupe el ancho completo */
+    }
+    
+    .ct2-txt a:hover {
+        background-color: rgb(255, 114, 114);
+    }
+    
+    .ct2-txt {
+        font-size: 1.2rem; /* Reduce el tamaño del título para pantallas muy pequeñas */
+    }
+
+    .ct2-txt .p2 {
+        font-size: 0.8rem; /* Ajusta aún más el tamaño del texto adicional */
+    }
+
+    .container2 img {
+        max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+        border-top-right-radius: 20px; /* Reduce el radio del borde */
+    }
+
+}
+
+
+
+
+
+
+
+

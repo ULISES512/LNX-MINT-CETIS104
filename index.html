@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="sources/img/img_general/logo_con_fondo.png" />
+    <link rel="stylesheet" href="css/css_index/slider.css">
+    <link rel="stylesheet" href="css/css_index/index.css">
+    <link rel="stylesheet" href="css/css_index/noticias_previas.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicio | Cetis 104 </title>
+</head>
+<body>
+
+    <!-- header agregado con js NT.Para modificar el header solo modificar el archivo "plantilla/header.html" -->
+    <div id="header"></div>
+
+
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+        <!-- todo el contenido -->
+        <header class="carril">
+            <div class="carousel">
+                
+                <div class="slide slide1 active">
+                    <div class="overlay">
+                        <h1 class="letra-slider">Proceso de Admisión </h1>
+                        <a href="./pages/Nuevo Ingreso.html" class="btn">CONOCE MÁS ></a>
+                    </div>
+                </div>
+
+                <div class="slide slide2">
+                    <div class="overlay">
+                        <h1 class="letra-slider">Oferta Academica</h1>
+                        <a href="pages/Oferta-educativa.html" class="btn">CONOCE MÁS ></a>
+                    </div>
+                </div>
+             
+                <div class="slide slide3">
+                    <div class="overlay">
+                        <h1 class="letra-slider"> Becas </h1>
+                        <a href="" class="btn">CONOCE MÁS ></a>
+                    </div>
+                </div>
+                <!-- Agrega más slides aquí -->
+                
+                <!-- Botones de navegación -->
+                <div class="nav-buttons">
+                    <button id="prevBtn">&#10094;</button>
+                    <button id="nextBtn">&#10095;</button>
+                </div>
+                
+                <!-- Indicadores de posición -->
+                <div class="indicators">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <!-- Agrega más indicadores según el número de slides -->
+                </div>
+            </div>
+        </header>
+
+        <div class="grid-container-secciones">
+            <div class="tarjeta-seccion">
+                <div class="capa-color_vino"></div>
+                <img src="sources/img/img_index/cetis 104 - img2.jpg" alt="Imagen 1 bloques" class="imagen-tarjeta">
+                <div class="texto-superpuesto">
+                    <span> Historia del CEtis. 104 </span>
+                    <div class="pestana-color_vino">
+                        <a href="./pages/historia.html" class="flecha-enlace">
+                            <div class="flecha"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-seccion">
+                <div class="capa-color_vino"></div>
+                <img src="sources/img/img_index/cetis 104 - img3.jpg" alt="Imagen 2 bloques" class="imagen-tarjeta">
+                <div class="texto-superpuesto">
+                    <span>Docentes</span>
+                    <div class="pestana-color_vino">
+                        <a href="pages/Docentes.html" class="flecha-enlace">
+                            <div class="flecha"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta-seccion">
+                <div class="capa-color_vino"></div>
+                <img src="sources/img/img_index/cetis 104.jpg" alt="Imagen 3 bloques" class="imagen-tarjeta">
+                <div class="texto-superpuesto">
+                    <span> Plantel </span>
+                    <div class="pestana-color_vino">
+                        <a href="./pages/infraestructura.html" class="flecha-enlace">
+                            <div class="flecha"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-container-custom">
+            <h1 class="N1_2">Noticias</h1>
+            <div class="news-grid-custom">
+                <div class="news-item-custom" onclick="toggleNews(this)" data-url="pages Eventos/Prototipos-2024.html">
+                    <div class="short-desc-custom">
+                        <p class="titulo-card-news"> Concurso de Prototipos Estatal 2024 </p>
+                        <p> Es una competencia que desafía a los estudiantes a crear innovadores prototipos tecnológicos. </p>
+                    </div>
+                    <div class="full-news-custom">
+                        <img src="sources/icons/8_122645.svg" alt="Noticia 1" class="news-image">
+                    </div>
+                    <style>
+                        .news-image{
+                            width: 150px;
+                        }
+                    </style>
+                    <!-- Botón Learn More -->
+                    <button class="learn-more" data-url="pages/Eventos-noticias.html">
+                        <span aria-hidden="true" class="circle">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text"> Ver más </span>
+                    </button>
+                </div>
+        
+                <div class="news-item-custom" onclick="toggleNews(this)" data-url="pages Eventos/Charla__Literaria.html">
+                    <div class="short-desc-custom">
+                        <p class="titulo-card-news"> Charla Literaria CETIS 104 </p>
+                        <p> Busca fomentar el amor por la lectura entre los estudiantes. A través de diálogos interactivos y recomendaciones de libros</p>
+                    </div>
+                    <div class="full-news-custom">
+                        <img src="sources/icons/ingenuity_wit_book_idea_light_bulb_learn_learning_icon_149691.png" alt="Noticia 2" class="news-image">
+                    </div>
+                    <!-- Botón Learn More -->
+                    <button class="learn-more">
+                        <span aria-hidden="true" class="circle">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text"> Ver más </span>
+                    </button>
+                </div>
+        
+                <div class="news-item-custom" onclick="toggleNews(this)" data-url="pages Eventos/Concurso Estatal.html">
+                    <div class="short-desc-custom">
+                        <p class="titulo-card-news"> CONCURSO ESTATAL DE ESCOLTAS 2023 </p>
+                        <p>Es una celebración del orgullo y la disciplina de los estudiantes mostrando su formación y respeto</p>
+                    </div>
+                    <div class="full-news-custom">
+                        <img src="sources/img/img_eventos/PreviewE.jpeg" alt="Noticia 3" class="news-image">
+                    </div>
+                    <!-- Botón Learn More -->
+                    <button class="learn-more">
+                        <span aria-hidden="true" class="circle">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text"> Ver más </span>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- footer agregado con js NT.Para modificar el header solo modificar el archivo "plantilla/footer.html" -->
+    <div id="footer" class="footer" onfocus="closeSidebar()"></div>
+    <script src="js/js_general/agg-plantillas-index.js"></script>
+    <script src="js/js_index/seccion1.js"></script>
+    <script src="js/js_index/noticias_previas.js"></script>
+   
+    <!-- dino cetis "plantilla/dino_redes.html" -->
+    <div id="dino_cetis" class="dino_cetis" onfocus="closeSidebar()"></div>
+
+</body>
+</html>

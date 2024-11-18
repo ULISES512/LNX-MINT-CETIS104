@@ -1,0 +1,303 @@
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-straight/css/uicons-thin-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-thin-rounded/css/uicons-thin-rounded.css');
+
+/* reiniciar el html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.content {
+  z-index: -1;
+  margin-top: 5em;
+}
+
+/* agregar letra a el html */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Barra de menu */
+.menu-icono {
+  padding-top: 7px;
+  width: 30px;
+}
+
+/* icono de la llave */
+.key-icon {
+  margin-right: 30px;
+  color: #fff;
+}
+
+/* Desaparecer lo iconos en pantallas grandes */
+.icono-navbar {
+  display: none;
+}
+
+/* Barra de colores necesarios */
+:root {
+  --color-white: #fff;
+  --color-dark1: rgb(39, 39, 39);
+  --color-dark2: #2d2d2d;
+  --color-dark3: #414141;
+  --color-dark4: #1c1c1c;
+  --color-dark5: #343434;
+  --color-purple: #b040ff;
+}
+
+/* ///////  Diseño de menu lateral izquierdo \\\\\\\  */
+
+/* Esconder menu y darle estilo */
+.menu {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+  background-color: #353535;
+  color: #fff;
+  overflow: auto;
+  transition: left 0.5s ease;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Margen izquierdo entre link y borde de menu */
+.menu a i {
+  margin-right: 10px;
+}
+
+/* Menu abierto */
+.menu.open {
+  left: 0;
+}
+
+/* Ocultar submenus cuando no esten activados / darle estilo */
+.menu-item .submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding-left: 20px;
+  background-color: #444;
+}
+
+/* Ajustar al menu */
+.menu-item .submenu a {
+  padding: 10px 0;
+  border-bottom: none;
+}
+
+/* Remover borde inferior de link de inicio */
+.menu a.inicio-link {
+  border-bottom: none;
+}
+
+/* Espacio entre header-menu y links  */
+.space{
+  padding-top: 50px;
+  border-bottom: 1px solid #444;
+}
+
+/*  Dar estilo a links de menu lateral */
+.menu a {
+  transition: 1s;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #444;
+}
+
+/* Animacion de separacion de botones  */
+.menu a.links:active,
+.menu a.links:active {
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+.menu a.links-o:active,
+.menu a.links-o:active {
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+/* header-menu */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo de boton para salir de menu */
+.close-button {
+  border-radius: 10px;
+  background-color: #2c2c2c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* /////// FIN de diseño de menu lateral izquierdo \\\\\\\  */
+
+/* imagen del escudo de cetis 104 */
+.img_logo {
+  padding-top: 7px;
+  height: 58.5px;
+  width: 102.5px;
+}
+
+/* reiniciar header y posicionamiento */
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Dar estilo al header */
+.header {
+  transition: opacity 3s ease, transform 3s ease; /* Cambia a 3s */
+  background-color: #6B0011;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 5em;
+  box-shadow: 1px 1px 4px var(--color-dark4);
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* dar espacio entre links de header */
+.navigation_header {
+  display: flex;
+  gap: 2.5em;
+  z-index: 2;
+}
+
+/* animacion de separacion de letras */
+.navigation_header a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 600ms;
+}
+
+.navigation_header a:hover {
+  letter-spacing: 1px;
+}
+
+
+/* desaparecer boton de menu cuando esta en pantalla grande */
+.btn_icon_header {
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu desplegable por debajo de link*/
+.dropdown-content {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+}
+
+/* Diseño de contenido por dentro de los links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Animacion de seleccion */
+.dropdown-content a:hover {
+  letter-spacing: 3px;
+  color: rgb(255, 255, 255);
+  background-color: #838383;
+}
+
+/* Aparicion de manu */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ajustar a telefono */
+@media screen and (max-width: 1280px) {
+  .key-icon {
+    display: none;
+  }
+
+  .menu {
+    display: initial;
+  }
+  
+  .navigation_header a {
+    font-size: 12px;
+    transition: 400ms;
+  }
+
+  .navigation_header a:hover,
+  .navigation_header a:active {
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 5px;
+  }
+
+  .navigation_header a:after,
+  .navigation_header a:before {
+    width: 0;
+  }
+
+  .navigation_header a:hover:after,
+  .navigation_header a:hover:before {
+    border-color: #ca5783;
+    width: 0%;
+  }
+
+  .navigation_header a:hover:before {
+    width: 0%;
+  }
+
+  .icono-navbar {
+    display: initial;
+  }
+
+  .navigation_header {
+    position: absolute;
+    flex-direction: column !important;
+    top: 0;
+    background: #ca5783;
+    height: 100%;
+    padding: 1em;
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+  
+  .btn_icon_header {
+    display: block;
+  }
+}
+

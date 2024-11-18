@@ -1,0 +1,547 @@
+body{
+  background-color: rgb(255, 255, 255);
+}
+.Especiality-Prog{
+  position: relative;
+  background-image: url(../img_css/FONDO\ TECNICO\ CETIS104.png);
+  margin-top: 50px;
+  background-size: cover;
+  overflow: hidden;
+
+}
+.Especiality-Prog img{
+  width: 1000px;
+  height: 770px;
+  margin-left: 1200px;
+  object-fit: cover;
+  filter: brightness(100%);
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
+}
+.Especiality-Prog h1{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  font-size: 40px;
+}
+.Especiality-Prog p{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+  font-size: 25px;
+  max-width:850px;
+}
+.Especiality-Prog .progo{
+  position: absolute;
+  left: 5%;
+  top: 80%;
+}
+
+.Especiality-Prog .progo #btn1,#btn2{
+  padding: 15px 25px;
+ border: none;
+ border-radius: 15px;
+ cursor: pointer;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+.Especiality-Prog .progo #btn1,#btn2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms 
+}
+.Especiality-Prog .progo #btn1,#btn2:hover{
+  color: #e8e8e8;
+}
+.Especiality-Prog .progo #btn1,#btn2:hover::before{
+  width: 100%;
+}
+.info-div-class p{
+  padding: 40px;
+    color: rgb(0, 3, 57);
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.info-div-class span{
+  color: rgb(31, 31, 31);
+  font-size: 20px;
+  padding: 20px 40px;
+  font-family: "Kanit", sans-serif;
+
+}
+.input-group {
+  position: relative;
+  margin-top: 50px;
+  border: 1px solid rgb(138, 138, 138);
+  padding: 20px 20px;
+  max-width: 450px;
+  max-height: 500px;
+  border-radius: 20px;
+margin-left: 200px;
+box-shadow: 10px 10px 10px rgb(175, 175, 175);
+
+
+width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem; 
+  width: 300px;
+}
+
+.input {
+  border: solid 1.5px #ffffff;
+  border-radius: 1rem;
+  background: none;
+  padding: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%; 
+}
+
+.user-label {
+  position: absolute;
+  left: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+.input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+.input:focus ~ .user-label,
+.input:valid ~ .user-label {
+  transform: translateY(-70%) scale(0.8);
+  background-color: #ffffff00;
+  padding: 0 .2em;
+  font-size: 18px;
+  color: #ffffff;
+}
+/* From Uiverse.io by doniaskima */ 
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #9f0000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.programacion-info {
+  position: relative;
+  margin-top: 50px;
+  background-color: #ffffff00;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  font-family: 'Arial', sans-serif;
+}
+
+.programacion-info h2 {
+  color: #800000; /* Color vino */
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.programacion-info ul {
+  margin-left: 10px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.programacion-info ul li {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.programacion-info ul li strong {
+  color: #a00000;
+}
+.img-prog-recomended{
+  position: absolute;
+  top: 120%;
+  right: 2%;
+  width: 35%;
+  height: 90%;
+  border-radius: 20px;
+}
+.img-prog-recomended img{
+  width: 100%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+.Laboratorio-Contabilidad{
+  position: relative;
+  background-image: url(../img_css/FONDO\ TECNICO\ CETIS104.png);
+  margin-top: 50px;
+  background-size: cover;
+  overflow: hidden;
+
+}
+.Laboratorio-Contabilidad img{
+  width: 1000px;
+  height: 770px;
+  margin-left: 1200px;
+  object-fit: cover;
+  filter: brightness(100%);
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
+}
+.Laboratorio-Contabilidad h1{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  font-size: 40px;
+}
+.Laboratorio-Contabilidad p{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+  font-size: 25px;
+  max-width:850px;
+}
+.Laboratorio-Contabilidad .progo2{
+  position: absolute;
+  left: 5%;
+  top: 80%;
+}
+
+.Laboratorio-Contabilidad .progo #btn1{
+  padding: 15px 25px;
+ border: none;
+ border-radius: 15px;
+ cursor: pointer;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+}
+.Laboratorio-Contabilidad .progo2 #btn1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms 
+}
+.Laboratorio-Contabilidad .progo #btn1:hover{
+  color: #e8e8e8;
+}
+.Laboratorio-Contabilidad .progo #btn1:hover::before{
+  width: 100%;
+}
+.contabilidad-info {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.contabilidad-info h3 {
+  color: #a00000;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contabilidad-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contabilidad-list li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: #333;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contabilidad-list li:last-child {
+  border-bottom: none;
+}
+
+.contabilidad-list li:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.chemistry-info {
+  background: linear-gradient(135deg, #460000, #800000);
+  padding: 20px;
+  border-radius: 15px;
+  color: #ffffff;
+  margin-top: 100px;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+.chemistry-info h2 {
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chemistry-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chemistry-info ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.chemistry-info ul li:hover {
+  transform: translateX(10px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.support-maintenance {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #8b0000;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.support-maintenance h3 {
+  text-align: center;
+  color: #8b0000;
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.support-maintenance ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.support-maintenance ul li {
+  margin-bottom: 10px;
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.support-maintenance ul li strong {
+  color: #8b0000;
+}
+
+
+
+
+ 
+@media (max-width: 768px) {
+  .img-prog-recomended{
+    display: none;
+  }
+  .programacion-info li{
+    font-size: 18px;
+  }
+  .programacion-info h2{
+    font-size: 25px;
+  }
+  .input-group{
+    margin-left: 5px;
+    max-width: 400px;
+  }
+.Especiality-Prog h1{
+  font-size: 25px;
+}
+.Especiality-Prog img{
+width: 100%;
+}
+.Especiality-Prog p{
+  font-size: 20px;
+}
+.Especiality-Prog{
+  margin-top: 80px;
+}
+
+.Laboratorio-Contabilidad h1{
+  font-size: 25px;
+}
+.Laboratorio-Contabilidad img{
+width: 100%;
+}
+.Laboratorio-Contabilidad p{
+  font-size: 20px;
+}
+.Laboratorio-Contabilidad{
+  margin-top: 80px;
+}
+}
+
+@media (max-width: 1500px) {
+.img-prog-recomended{
+  display: none;
+}
+}
