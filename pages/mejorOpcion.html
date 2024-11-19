@@ -40,34 +40,83 @@
     </div>
   </div>
 
+
   <div class="form-information">
     <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
+      <p>Encuentra tu futuro</p>
+      <span>Te ayudamos a elegir la mejor opción para ti. Al contestar este formulario, te daremos una especialidad que mejor se adapte a ti.</span>
     </div>
-
-    <form action="" class="input-group">
+  
+    <form action="" class="input-group" id="careerForm">
       <div class="input-wrapper">
         <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
         <label class="user-label">Nombre(s)</label>
       </div>
+  
 
       <div class="input-wrapper">
         <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
         <label class="user-label">Apellido(s)</label>
       </div>
-
+  
       <div class="input-wrapper">
         <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
         <label class="user-label">Correo Electrónico</label>
       </div>
-
+  
+=      <div class="input-wrapper">
+  <input required type="number" name="pregunta1" min="1" max="10" class="input" />
+  <label class="user-label">¿Te gustan los experimentos y analizar resultados? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta2" min="1" max="10" class="input" />
+        <label class="user-label">¿Te divierte programar y crear juegos o aplicaciones? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta3" min="1" max="10" class="input" />
+        <label class="user-label">¿Te interesa cómo funcionan las máquinas y sistemas mecánicos? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta4" min="1" max="10" class="input" />
+        <label class="user-label">¿Te gustaría trabajar con robots y automatización? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta5" min="1" max="10" class="input" />
+        <label class="user-label">¿Te atrae la inteligencia artificial y cómo puede mejorar la vida? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta6" min="1" max="10" class="input" />
+        <label class="user-label">¿Te gustan los números y la gestión financiera? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta7" min="1" max="10" class="input" />
+        <label class="user-label">¿Te sientes cómodo resolviendo problemas técnicos en computadoras? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta8" min="1" max="10" class="input" />
+        <label class="user-label">¿Te gusta diseñar y crear cosas nuevas? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta9" min="1" max="10" class="input" />
+        <label class="user-label">¿Te interesa cómo funcionan los sistemas y cómo mejorarlos? (Del 1 al 10)</label>
+      </div>
+  
+      <div class="input-wrapper">
+        <input required type="number" name="pregunta10" min="1" max="10" class="input" />
+        <label class="user-label">¿Te gustaría trabajar en un equipo para resolver desafíos? (Del 1 al 10)</label>
+      </div>
+  
       <button class="btn-53" type="submit">
         <div class="original">ENVIAR</div>
         <div class="letters">
-
           <span>E</span>
           <span>N</span>
           <span>V</span>
@@ -76,8 +125,58 @@
           <span>R</span>
         </div>
       </button>
+      
     </form>
   </div>
+  
+  <script>
+
+document.getElementById('careerForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const nombre = document.querySelector('input[name="Nombre"]').value;
+  const apellido = document.querySelector('input[name="Apellido"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+
+  const respuestas = [
+    parseInt(document.querySelector('input[name="pregunta1"]').value),
+    parseInt(document.querySelector('input[name="pregunta2"]').value),
+    parseInt(document.querySelector('input[name="pregunta3"]').value),
+    parseInt(document.querySelector('input[name="pregunta4"]').value),
+    parseInt(document.querySelector('input[name="pregunta5"]').value),
+    parseInt(document.querySelector('input[name="pregunta6"]').value),
+    parseInt(document.querySelector('input[name="pregunta7"]').value),
+    parseInt(document.querySelector('input[name="pregunta8"]').value),
+    parseInt(document.querySelector('input[name="pregunta9"]').value),
+    parseInt(document.querySelector('input[name="pregunta10"]').value)
+  ];
+
+  const total = respuestas.reduce((acc, curr) => acc + curr, 0);
+
+  let carrera = '';
+
+  if (total >= 85) {
+    carrera = 'Programación';
+  } else if (total >= 75) {
+    carrera = 'Mecatrónica';
+  } else if (total >= 65) {
+    carrera = 'Mecánica Industrial';
+  } else if (total >= 55) {
+    carrera = 'Inteligencia Artificial';
+  } else if (total >= 45) {
+    carrera = 'Laboratorista Químico';
+  } else if (total >= 35) {
+    carrera = 'Contabilidad';
+  } else {
+    carrera = 'Soporte y Mantenimiento';
+  }
+      window.location.href = `resultado-carrera.html?nombre=${nombre}&apellido=${apellido}&carrera=${carrera}`;
+    });
+  </script>
+  
+  
+
+
   <div class="support-maintenance">
     <h2>¿Por qué estudiar Programación en el CETIS 104?</h2>
     <ul>
@@ -113,44 +212,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
-
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
+  
   <div class="support-maintenance">
     <h3>¿Por qué estudiar Contabilidad en el CETIS 104?</h3>
     <ul>
@@ -188,44 +250,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
 
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
   <div class="support-maintenance">
     <h2>¿Por qué estudiar Laboratorista Químico en el CETis 104?</h2>
     <ul>
@@ -261,44 +286,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
-
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
+ 
 
   <div class="support-maintenance">
     <h3>¿Por qué estudiar Soporte y Mantenimiento en el CETis 104?</h3>
@@ -334,44 +322,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
-
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
+  
 
   <div class="support-maintenance">
     <h3>¿Por qué estudiar Mecatrónica en el CETis 104?</h3>
@@ -406,44 +357,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
-
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
+  
 
   <div class="support-maintenance">
     <h3>¿Por qué estudiar Mecánica Industrial en el CETis 104?</h3>
@@ -485,44 +399,7 @@
 
 
 
-  <div class="form-information" id="form-information2">
-    <div class="info-div-class">
-      <p>Solicita más información</p>
-      <span>Puedes solicitar información completa sobre la carrera. Solo llena el
-        formulario y recibirás un PDF con todos los detalles directamente en
-        tu correo.</span>
-    </div>
 
-    <form action="" class="input-group">
-      <div class="input-wrapper">
-        <input required type="text" name="Nombre" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Nombre(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="text" name="Apellido" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Apellido(s)</label>
-      </div>
-
-      <div class="input-wrapper">
-        <input required type="email" name="email" autocomplete="off" class="input" placeholder="" />
-        <label class="user-label">Correo Electrónico</label>
-      </div>
-
-      <button class="btn-53" type="submit">
-        <div class="original">ENVIAR</div>
-        <div class="letters">
-
-          <span>E</span>
-          <span>N</span>
-          <span>V</span>
-          <span>I</span>
-          <span>A</span>
-          <span>R</span>
-        </div>
-      </button>
-    </form>
-  </div>
 
   <div class="support-maintenance">
     <h3>¿Por qué estudiar Inteligencia artificial en el CETis 104?</h3>
@@ -536,48 +413,6 @@
       <li>Serás parte de la transformación tecnológica en sectores como la medicina, el transporte y la educación.</li>
     </ul>
   </div>
-
-<script>
-  // Seleccionamos el formulario y sus campos
-const form = document.querySelector(".input-group");
-const emailInput = form.querySelector("input[name='email']");
-
-// Función para validar email
-function validarEmail(email) {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(email);
-}
-
-// Evento al enviar el formulario
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // Evita el envío por defecto del formulario
-
-  const nombre = form.querySelector("input[name='Nombre']").value.trim();
-  const apellido = form.querySelector("input[name='Apellido']").value.trim();
-  const email = emailInput.value.trim();
-
-  // Verificar que todos los campos estén llenos
-  if (!nombre || !apellido || !email) {
-    alert("Por favor, completa todos los campos del formulario.");
-    return;
-  }
-
-  // Validar el formato del correo
-  if (!validarEmail(email)) {
-    alert("Por favor, ingresa un correo electrónico válido.");
-    return;
-  }
-
-  // Simular el envío del PDF
-  alert(`¡Gracias ${nombre}! Hemos enviado un PDF con más información a ${email}.`);
-  
-  // Aquí podrías añadir un backend real para enviar el correo
-  form.reset(); // Limpiar el formulario después del envío
-});
-
-</script>
-
-
   <!-- header agregado con js NT.Para modificar el header solo modificar el archivo "plantilla/header.html" -->
   <div id="header"></div>
 

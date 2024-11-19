@@ -1,0 +1,249 @@
+.Especiality-Prog{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      #345bdb,
+      #cc2e2e
+    ); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Especiality-Prog::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none; /* Allow clicking through the pattern layer */
+  }
+
+
+  
+  .Especiality-Prog img{
+    width: 1000px;
+    height: 770px;
+    margin-left: 1200px;
+    object-fit: cover;
+    filter: brightness(100%);
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
+  }
+  .Especiality-Prog h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+  }
+  .Especiality-Prog p{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: white;
+    font-size: 25px;
+    max-width:850px;
+  }
+  .Especiality-Prog .progo{
+    position: absolute;
+    left: 5%;
+    top: 80%;
+  }
+  /* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px rgb(255, 47, 47);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: rgb(255, 47, 47);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 47, 47);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(255, 47, 47);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.titulacion-container {
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Encabezado */
+.titulacion-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulacion-header h1 {
+    font-size: 30px;
+    color: #7b1f1f; /* Color vino */
+}
+
+.titulacion-header p {
+    font-size: 25px;
+    color: #666;
+}
+
+/* Modalidades */
+.modalidades, .requisitos, .documentos {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #7b1f1f;
+    margin-bottom: 15px;
+}
+
+/* Modalidades */
+.modalidad {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modalidad h3 {
+    color: #7b1f1f;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.modalidad p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Requisitos y Documentos */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Estilos para Responsividad */
+@media (max-width: 768px) {
+    .titulacion-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .titulacion-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .modalidad h3, .requisitos h2, .documentos h2 {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../sources/img/img_general/logo_con_fondo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/css_carreras/resultado.css">
+    <title>Resultado-Carrera | Cetis 104</title>
+  </head>
+  <body>
+
+    <div class="card-container">
+      <div class="card">
+      <div class="front-content">
+        <p>Ver recomendación</p>
+      </div>
+      
+    <div id="resultado" class="content">
+        <p id="mensaje"></p>
+        <p id="recomendacion"></p>
+      </div>
+    </div>
+    </div>
+
+    <div id="contenedorResultado">
+        <div id="contenidoResultado">
+          <p id="mensajeInformativo">
+            En el CETis 104, te ofrecemos una educación de calidad, diseñada para prepararte ante los retos del futuro profesional. Creemos que esta es la mejor opción para ti, ya que contamos con la infraestructura, los programas académicos y el equipo docente que te permitirán alcanzar tu máximo potencial.
+          </p>
+          <p>
+            Nuestra misión es proporcionarte una formación integral, combinando el aprendizaje teórico con la práctica, para que desarrolles las habilidades que necesitas para destacarte en tu campo. Al formar parte de nuestra comunidad, tendrás acceso a una educación dinámica e innovadora.
+          </p>
+          <p>
+            Con el respaldo del CETis 104, estarás en el camino correcto para lograr tus objetivos académicos y profesionales. Estamos convencidos de que tu experiencia aquí será enriquecedora y transformadora. Te deseamos un futuro lleno de éxitos.
+          </p>
+        </div>
+      </div>
+      
+      
+
+
+
+    <script>
+      function getParameterByName(name) {
+        const url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        const regex = new RegExp("[?&]" + name + "(=([^&]*)|&|#|$)", "i");
+        const results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      const nombre = getParameterByName("nombre");
+      const apellido = getParameterByName("apellido");
+      const carrera = getParameterByName("carrera");
+
+      document.getElementById("mensaje").textContent = `Estimado/a ${nombre}, es un placer para nosotros que hayas dedicado tu tiempo a reflexionar sobre tu futuro profesional. Sabemos que tomar decisiones importantes como esta puede ser desafiante, pero estamos aquí para brindarte la orientación que necesitas. Apreciamos tu esfuerzo por conocer más sobre ti mismo/a y tus intereses.`;
+
+      document.getElementById("recomendacion").textContent = `Con base en las respuestas que nos proporcionaste, creemos que la mejor opción para ti es estudiar la carrera de ${carrera}. Esta especialidad se adapta a tus intereses y habilidades, y estamos seguros de que podrás destacarte en este campo. Te animamos a seguir desarrollando tus pasiones y alcanzar todo tu potencial. ¡Te deseamos mucho éxito en tu futuro académico y profesional!`;
+    </script>
+    <div id="header"></div>
+
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content"></div>
+
+    <div id="footer" class="footer" onfocus="closeSidebar()"></div>
+
+    <div id="dino_cetis" class="dino_cetis" onfocus="closeSidebar()"></div>
+
+    <script src="../js/js_general/agg-plantillas.js"></script>
+  </body>
+</html>

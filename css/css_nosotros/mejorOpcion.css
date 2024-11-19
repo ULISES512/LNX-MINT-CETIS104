@@ -87,13 +87,14 @@ body{
   font-family: "Kanit", sans-serif;
 
 }
+
 .input-group {
   position: relative;
   margin-top: 50px;
   border: 1px solid rgb(138, 138, 138);
   padding: 20px 20px;
-  max-width: 450px;
-  max-height: 500px;
+  max-width: 900px;
+  
   border-radius: 20px;
 margin-left: 200px;
 box-shadow: 10px 10px 10px rgb(175, 175, 175);
@@ -111,7 +112,8 @@ width: 100%;
 .input-wrapper {
   position: relative;
   margin-bottom: 1.5rem; 
-  width: 300px;
+  width: 800px;
+  padding: 10px;
 }
 
 .input {
@@ -143,13 +145,15 @@ width: 100%;
 
 .input:focus ~ .user-label,
 .input:valid ~ .user-label {
-  transform: translateY(-70%) scale(0.8);
+  transform: translateY(-85%) scale(0.8);
   background-color: #ffffff00;
   padding: 0 .2em;
   font-size: 18px;
   color: #ffffff;
 }
-/* From Uiverse.io by doniaskima */ 
+
+
+
 .btn-53,
 .btn-53 *,
 .btn-53 :after,
@@ -495,6 +499,66 @@ width: 100%;
   color: #8b0000;
 }
 
+/* Estilo para el div que muestra el resultado */
+#resultado {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que el div esté encima de otros elementos */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo interno del resultado */
+#resultado .content {
+  text-align: center;
+  background-color: #333; /* Fondo oscuro para el contenido */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Títulos del resultado */
+#resultado h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Mensaje de bienvenida */
+#mensaje {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Recomendación de carrera */
+#recomendacion {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Botón para cerrar */
+#cerrarResultado {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cerrarResultado:hover {
+  background-color: #c0392b;
+}
 
 
 
@@ -538,7 +602,93 @@ width: 100%;
 .Laboratorio-Contabilidad{
   margin-top: 80px;
 }
+
+
+
+
+.input-group {
+  position: relative;
+  margin-top: 50px;
+  border: 1px solid rgb(138, 138, 138);
+  padding: 20px 20px;
+  max-width: 700px;
+  
+  border-radius: 20px;
+margin-left: 0px;
+box-shadow: 10px 10px 10px rgb(175, 175, 175);
+
+
+width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
 }
+
+.input-wrapper {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 1.5rem; 
+  width: 350px;
+}
+
+.input {
+  border: solid 1.5px #ffffff;
+  border-radius: 1rem;
+  background: none;
+  padding: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%; 
+}
+
+.user-label {
+  position: absolute;
+  left: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+.input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+.input:focus ~ .user-label,
+.input:valid ~ .user-label {
+  transform: translateY(-85%) scale(0.8);
+  background-color: #ffffff00;
+  padding: .10px .4em;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1500px) {
 .img-prog-recomended{
