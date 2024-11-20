@@ -1,148 +1,191 @@
-body{
-    background-color: aliceblue;
+body {
+  background-color: aliceblue;
 }
+
 .card-container {
-    width: 400px;
-    height: 600px;
-    margin-top: 100px;
-    margin-left: 50px;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-  }
-  
-  .card .front-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
-  }
-  
-  .card .front-content p {
-    font-size: 32px;
-    font-weight: 700;
-    opacity: 1;
-    background: linear-gradient(-45deg, #f82929 0%, #ff00ea 100% );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
-  }
-  
-  .card .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    background: linear-gradient(-45deg, #fd3030 0%, #660000 100% );
-    color: #ffffff;
-    padding: 0px;
-    line-height: 1.5;
-    border-radius: 5px;
-    pointer-events: none;
-    transform: translateX(-100%);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card .content .heading {
-    font-size: 32px;
-    font-weight: 700;
-  }
-  
-  .card:hover .content {
-    transform: translateY(-20%);
-  }
-  
-  .card:hover .front-content {
-    transform: translateX(-30%);
-  }
-  
-  .card:hover .front-content p {
-    opacity: 0;
-  }
-  @media (max-width: 768px) {
-.card-container{
+  width: 550px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 50px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card .front-content p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #f82929 0%, #ff00ea 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #fd3030 0%, #660000 100%);
+  color: #ffffff;
+  padding: 0px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(-20%);
+}
+
+.card:hover .front-content {
+  transform: translateX(-30%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .card-container {
     width: 370px;
     margin-left: 10px;
+  }
 
-}
-.card .content{
+  .card .content {
     font-size: 18px;
+  }
 }
-  }
-  
 
+#contenedorResultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
 
+#contenidoResultado {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 80%;
+  max-width: 750px;
+  font-family: "Arial", sans-serif;
+  border-left: 5px solid #800000;
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#mensajeInformativo {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #800000;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#contenidoResultado p {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+#contenidoResultado p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
   #contenedorResultado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 10px;
   }
-  
-  #contenidoResultado {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 80%;
-    max-width: 750px;
-    font-family: 'Arial', sans-serif;
-    border-left: 5px solid #800000; 
-    margin-left: 5px;
-  }
-  
-  #mensajeInformativo {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #800000;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-  
-  #contenidoResultado p {
-    font-size: 20px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-  }
-  
-  #contenidoResultado p:last-child {
-    margin-bottom: 0;
-  }
-  
-  @media (max-width: 768px) {
-    #contenidoResultado {
-      padding: 20px;
-    }
-  
-    #mensajeInformativo {
-      font-size: 17px
-    }
-  
-    #contenidoResultado p {
-      font-size: 1em;
-    }
 
-    
+  #contenidoResultado {
+    width: 95%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
+  #mensajeInformativo {
+    font-size: 1.2em;
+  }
+
+  #contenidoResultado p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .card-container,
+  #contenedorResultado {
+    flex: 1 1 100%;
+  }
+}
+
+.group-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-container,
+#contenedorResultado {
+  flex: 1 1 calc(50% - 40px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1300px) {
+  #contenidoResultado {
+    padding: 20px;
+  }
+
+  #mensajeInformativo {
+    font-size: 17px;
+  }
+
+  #contenidoResultado p {
+    font-size: 1em;
+  }
+
+  .card-container,
+  #contenedorResultado {
+    flex: 1 1 100%;
+  }
+}
